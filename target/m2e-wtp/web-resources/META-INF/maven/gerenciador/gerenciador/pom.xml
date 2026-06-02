@@ -1,0 +1,38 @@
+
+
+
+
+
+<project xmlns="http://maven.apache.org/POM/3.6.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/3.6.3 https://maven.apache.org/xsd/maven-3.6.3.xsd">
+  <modelVersion>3.6.3</modelVersion>
+  <groupId>gerenciador</groupId>
+  <artifactId>gerenciador</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <dependencies>
+
+        <!-- Servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- MySQL JDBC -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>5.1.49</version>
+        </dependency>
+
+    </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
